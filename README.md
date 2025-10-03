@@ -22,16 +22,18 @@ The goal is to understand relationships between features and medical charges thr
     * **Correlation Analysis**
       * Heatmap of correlations.
       * Key Insight: Smoking status shows the strongest correlation with charges.
+        ![](heatmap.png)
 
     * **Charges vs. Smoking Status**
   
       * Barplot: Smokers pay ~4x higher charges than non-smokers.
       * Boxplot: Shows medians, spread, and outliers. Smokers have charges exceeding $60k+.
+        ![](smoker_bar.png)
+        ![](smoker_box.png)
 
     * **Charges vs. Sex**
-      * Barplot: Males have slightly higher mean charges (~$13.8k vs. $12.9k).
       * Grouped Barplot (Sex × Smoker): Smoker effect dominates — male smokers highest (~$33k).
-
+       ![](sex_smoker_group.png)
     
     
     * **Age vs. Charges**
@@ -41,6 +43,7 @@ The goal is to understand relationships between features and medical charges thr
       * Colored by Smoker: Smokers always pay more at every age.
       
       * Colored by Sex: Overlap is heavy; sex has little explanatory power.
+      * ![](age_smoke.png)
     
     
     * **BMI vs. Charges**
@@ -50,15 +53,14 @@ The goal is to understand relationships between features and medical charges thr
       * Colored by Smoker: Clear split into two bands.
       
       * LMPlot: Smokers show steep positive slope; non-smokers almost flat.
+        ![](bmi_charges_smoke.png)
     
     * **Regional Analysis**
     
       * Countplot: Southeast has the highest count.
-      
       * Barplot: Southeast has the highest average charges.
-      
       * Smoker Ratio: Southeast has the highest smoker percentage (~25%).
-
+        ![](regions.png)
 
 
 
